@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GesturesHW</string>
+    <string name="tc_message">Tc Message</string>
+    <string name="Tc_Button">CLICK ME</string>
+</resources>
