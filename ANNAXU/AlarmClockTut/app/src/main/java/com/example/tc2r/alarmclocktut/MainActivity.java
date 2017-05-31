@@ -103,6 +103,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				}
 				// get the string values of the hour and minute
 
+				// Decide if AM or PM
+				String mornOrEven = "AM";
+				if(hour > 11){
+					mornOrEven = "PM";
+				}
+
 				// Convert the int values to strings
 				//Toast.makeText(context.getApplicationContext(),"RAW TIME: "+ String.valueOf(hour) +":"+ String.valueOf(minute), Toast.LENGTH_LONG).show();
 				String hourString = String.valueOf(hour);
@@ -124,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 				}
 
 				// method that changes the update text TextView
-				setAlarmText("Alarm set to: " + hourString + ":" + minuteString);
+				setAlarmText("Alarm set to: " + hourString + ":" + minuteString +" "+mornOrEven);
 
 
 				// put in extra string into myintent

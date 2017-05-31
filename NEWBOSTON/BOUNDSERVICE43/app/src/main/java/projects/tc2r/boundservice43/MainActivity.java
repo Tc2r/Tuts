@@ -1,17 +1,28 @@
 package projects.tc2r.boundservice43;
-//THENEWBOSTON - BOUND SERVICES TUTORIAL 43
-//https://www.youtube.com/watch?v=0c4jRCm353c
-import android.app.Service;
+
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import projects.tc2r.boundservice43.MyService.MyLocalBinder;
-import android.content.ServiceConnection;
 import android.widget.TextView;
+
+import projects.tc2r.boundservice43.MyService.MyLocalBinder;
+
+/* Instructor: THENEWBOSTON
+* Link: https://www.youtube.com/watch?v=0c4jRCm353c
+*
+* BOUND SERVICES TUTORIAL 43
+*
+* Notes on Project:
+* A bound service is the server in a client-server interface.
+* It allows components (such as activities) to bind to the service,
+* send requests, receive responses, and perform interprocess communication (IPC).
+*
+*/
 
 public class MainActivity extends AppCompatActivity {
 
